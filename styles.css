@@ -1,7 +1,7 @@
 /*
 Custom Styles for MatBlazor Project
 https://www.matblazor.com/
-https://blazorfiddle.com/s/p004esvf
+https://blazorfiddle.com/s/xe193y21
 Godspeed
 */
 /* Default Theme Overrides */
@@ -25,7 +25,6 @@ Godspeed
 }
 .nav-drawer-container button:hover {
   background-color: #ecf1f7 !important;
-  border-radius: 3px !important;
 }
 .nav-drawer-container button:focus, .nav-drawer-container button:focus-visible {
   outline: none;
@@ -62,12 +61,23 @@ div:has(button .nav-btn-hide) > div {
   width: 100%;
 }
 .nav-drawer-container > aside .nav-description, .nav-drawer-container > aside .nav-list {
-  margin: 0.5em 1em;
+  padding: 0.7em;
 }
 .nav-drawer-container > aside .nav-description {
-  background-color: #005580;
+  background-color: rgba(0,0,0,.1);
   border-radius: 4px;
-  margin-top: 3.2em;
+  grid-column: 1/-1;
+  line-height: 1.3em;
+  width: 100%;
+}
+.nav-drawer-container > aside .nav-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.3em;
+  margin: 0 auto;
+}
+.nav-drawer-container > aside .nav-list ul li {
+  margin: 0.7em 0;
 }
 .nav-drawer-container > aside .nav-list h4 {
   border-bottom: 2px solid #fff6;
@@ -82,8 +92,14 @@ div:has(button .nav-btn-hide) > div {
   margin-left: 0;
   padding-left: 0;
 }
-.nav-drawer-container > aside .nav-list ul a {
+.nav-drawer-container > aside .nav-list ul li a {
   color: #fff;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 0.2s all ease;
+}
+.nav-drawer-container > aside .nav-list ul li a:hover {
+  text-decoration-color: #fff;
 }
 /* Accordions */
 .mat-accordion:has(.nav-list) {
