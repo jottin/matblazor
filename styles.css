@@ -9,7 +9,9 @@ Godspeed
   --mdc-theme-primary: #00a0af !important;
   --mdc-theme-secondary: #f68e1e !important;
 }
-/* Main Nav */
+/* Main Nav Desktop */
+
+/* Main Nav Mobile */
 .nav-drawer-container {
   font-family: 'Open Sans', arial, helvetica, sans-serif !important;
   height: 100vh;
@@ -101,7 +103,7 @@ div:has(button .nav-btn-hide) > div {
 .nav-drawer-container > aside .nav-list ul li a:hover {
   text-decoration-color: #fff;
 }
-/* Accordions */
+/* Main Nav Mobile Accordion */
 .mat-accordion:has(.nav-list) {
   border-top: 1px solid rgba(0,0,0,.2);
   margin-top: 3.2em;
@@ -114,6 +116,11 @@ div:has(button .nav-btn-hide) > div {
 .mat-expansion-panel__content:has(.nav-list) {
   background-color: #005580;
 }
+.mat-accordion:has(.nav-list) .mat-expansion-panel__summary .after {
+  font-size: 1.85em !important;
+  -webkit-text-stroke: 0.02em #006699;
+}
+/* Default Accordion Overrides */
 .mat-accordion .mat-expansion-panel.mat-expansion-panel--expanded {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -124,8 +131,4 @@ div:has(button .nav-btn-hide) > div {
 .mat-expansion-panel__header {
   flex-basis: 50% !important;
   font-size: 1.1em !important;
-}
-.mat-accordion .mat-expansion-panel__summary .after {
-  font-size: 1.85em !important;
-  -webkit-text-stroke: 0.02em #006699;
 }
