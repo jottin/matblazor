@@ -1,8 +1,8 @@
 /*
-Custom Styles for MatBlazor Project
+CHARTS Styles for MatBlazor UI
 https://www.matblazor.com/
 https://blazorfiddle.com/s/xe193y21
-Godspeed
+FLHealthCHARTS.gov
 */
 /* Default Theme Overrides */
 :root {
@@ -10,16 +10,48 @@ Godspeed
   --mdc-theme-secondary: #f68e1e !important;
 }
 /* Main Nav Desktop */
-
+.nav-tabgroup-container span.mdc-tab__text-label {
+  color: #006699;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-variant: lining-nums;
+}
+.nav-tabgroup-container .mdc-tab-indicator .mdc-tab-indicator__content--underline {
+  border: none;
+}
+.nav-tabgroup-container .mdc-tab-indicator .mdc-tab-indicator__content--underline::after {
+  content: "";
+  background-color: #ffa927;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.2em;
+  transition: 0.2s all ease;
+  visibility: hidden;
+}
+.nav-tabgroup-container .mdc-tab-indicator--active .mdc-tab-indicator__content--underline::after {
+  width: 100%;
+  transition-delay: 0.1s;
+  visibility: visible;
+}
+.nav-tabgroup-container .nav-list {
+  margin-top: 2em;
+}
+.nav-tabgroup-container .nav-list h4, .nav-tabgroup-container .nav-list ul {
+  margin-left: 0.75em !important;
+}
 /* Main Nav Mobile */
 .nav-drawer-container {
-  font-family: 'Open Sans', arial, helvetica, sans-serif !important;
+  font-family: "Open Sans", arial, helvetica, sans-serif !important;
   height: 100vh;
 }
 .nav-drawer-container button {
   background-color: #fff;
   color: #006699 !important;
-  letter-spacing: .01em !important;
+  letter-spacing: 0.01em !important;
   margin-top: 0.5em;
   margin-left: 0.5em;
   text-transform: capitalize !important;
@@ -55,52 +87,52 @@ div:has(button .nav-btn-hide) > div {
 .mat-drawer.mdc-drawer--open:not(.mdc-drawer--closing)+.mdc-drawer-app-content, .mdc-drawer.mdc-drawer--open:not(.mdc-drawer--closing)+.mdc-drawer-app-content {
   margin: initial !important;
 }
-.nav-drawer-container > aside {
+.nav-drawer-container > aside, .nav-tabgroup-container .nav-list {
   background-color: #006699;
   color: #fff;
 }
-.nav-drawer-container > aside.mat-drawer {
+.nav-drawer-container > aside.mat-drawer, .nav-tabgroup-container .nav-list {
   width: 100%;
 }
-.nav-drawer-container > aside .nav-description, .nav-drawer-container > aside .nav-list {
+.nav-drawer-container > aside .nav-description, .nav-drawer-container > aside .nav-list, .nav-tabgroup-container .nav-list .nav-description, .nav-tabgroup-container .nav-list {
   padding: 0.7em;
 }
-.nav-drawer-container > aside .nav-description {
+.nav-drawer-container > aside .nav-description, .nav-tabgroup-container .nav-list .nav-description {
   background-color: rgba(0,0,0,.1);
   border-radius: 4px;
   grid-column: 1/-1;
   line-height: 1.3em;
   width: 100%;
 }
-.nav-drawer-container > aside .nav-list {
+.nav-drawer-container > aside .nav-list, .nav-tabgroup-container .nav-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.3em;
   margin: 0 auto;
 }
-.nav-drawer-container > aside .nav-list ul li {
+.nav-drawer-container > aside .nav-list ul li, .nav-tabgroup-container .nav-list ul li {
   margin: 0.7em 0;
 }
-.nav-drawer-container > aside .nav-list h4 {
+.nav-drawer-container > aside .nav-list h4, .nav-tabgroup-container .nav-list h4 {
   border-bottom: 2px solid #fff6;
   display: inline-block;
   font-weight: 600;
   font-size: 1em;
 }
-.nav-drawer-container > aside .nav-list ul {
+.nav-drawer-container > aside .nav-list ul, .nav-tabgroup-container .nav-list ul {
   font-size: .9em;
   font-weight: 400;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
-.nav-drawer-container > aside .nav-list ul li a {
+.nav-drawer-container > aside .nav-list ul li a, .nav-tabgroup-container .nav-list ul li a {
   color: #fff;
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: 0.2s all ease;
 }
-.nav-drawer-container > aside .nav-list ul li a:hover {
+.nav-drawer-container > aside .nav-list ul li a:hover, .nav-tabgroup-container .nav-list ul li a:hover {
   text-decoration-color: #fff;
 }
 /* Main Nav Mobile Accordion */
@@ -109,7 +141,7 @@ div:has(button .nav-btn-hide) > div {
   margin-top: 3.2em;
 }
 .mat-accordion .mat-expansion-panel:has(.nav-list) {
-  background-color:transparent;
+  background-color: transparent;
   border-bottom: 1px solid rgba(0,0,0,.2);
   box-shadow: none;
 }
