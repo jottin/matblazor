@@ -1,8 +1,7 @@
 /*
 Custom MatBlazor Styles for CHARTS
 https://www.matblazor.com/
-https://blazorfiddle.com/s/xe193y21
-https://blazorfiddle.com/s/183nqadl
+https://blazorfiddle.com/s/23nn2o5e
 FLHealthCHARTS.gov
 */
 /* Default Theme Overrides */
@@ -76,7 +75,7 @@ FLHealthCHARTS.gov
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23006699' stroke='%23006699' stroke-linecap='round' stroke-miterlimit='10' stroke-width='.6' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E") !important;
   padding-left: 1.5rem !important;
 }
-div:has(button .nav-btn-hide) > div {
+.nav-drawer-container .mdc-drawer-app-content:has(button .nav-btn-hide) > div {
   display: flex;
   justify-content: end;
   width: calc(100% - 2em);
