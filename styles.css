@@ -22,13 +22,15 @@ FLHealthCHARTS.gov
   background-position: center;
   background-repeat: no-repeat;
   background-size: 167px;
-	cursor: pointer;
+  cursor: pointer;
   display: flex;
   align-self: center;
   width: 170px;
   height: 50px;
   margin-right: 0.75em;
   margin-left: 0.75em;
+  outline: none;
+  text-decoration: none;
 }
 .nav-drawer-container .mdc-tab-bar {
   display: flex;
