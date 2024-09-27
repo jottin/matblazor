@@ -10,6 +10,37 @@ FLHealthCHARTS.gov
   --mdc-theme-secondary: #f68e1e !important;
 }
 /* Main Nav Desktop */
+.nav-drawer-container .mdc-tab-bar, .mdc-tab-bar .mdc-tab, .mdc-drawer-app-content > div {
+  height: 60px;
+}
+.nav-drawer-container .nav-tabgroup-container {
+  width: 100%;
+}
+.nav-drawer-container .mdc-tab-bar::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 2669.46 479.67' style='enable-background:new 0 0 2669.46 479.67;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2300B3CB;%7D .st1%7Bfill:%23FAA82A;%7D%0A%3C/style%3E%3Cg%3E%3Cg%3E%3Cpath class='st0' d='M1526.78,403.26c-72.32,0-114.24-70.54-114.24-145.79c0-75.24,44.68-145.78,114.24-145.78 c38.69,0,65.41,13.17,90.74,40.44l-33.17,34.8c-15.19-17.87-29.48-24.92-52.51-24.92c-43.76,0-64.02,47.97-64.02,95.46 c0,47.5,21.18,95.47,64.02,95.47c23.03,0,39.15-10.35,52.51-28.22l33.17,38.09C1592.19,390.09,1565.47,403.26,1526.78,403.26z'/%3E%3Cpath class='st0' d='M1764.13,398.54v-118.5h-88.44v118.5h-54.35V116.39h54.35V230.2h88.44V116.39h54.35v282.16H1764.13z'/%3E%3Cpath class='st0' d='M2005.16,405.13l-18.88-59.25h-95.36l-18.87,59.25l-54.36-13.63l98.57-275.12h44.23l99.03,275.12 L2005.16,405.13z M1938.37,193.99l-32.7,103.46h65.4L1938.37,193.99z'/%3E%3Cpath class='st0' d='M2210.72,405.13l-81.53-104.86h-15.66v98.28h-54.35V116.39h70.93c52.98,0,102.72,36.22,102.72,90.29 c-0.46,36.68-21.19,65.84-50.21,79.95l74.63,90.76L2210.72,405.13z M2130.12,164.83h-16.58v87.01h16.58 c26.72,0,47.45-19.28,47.45-43.75C2177.57,184.11,2160.06,164.83,2130.12,164.83z'/%3E%3Cpath class='st0' d='M2341.72,166.71v231.83h-54.35V166.71h-69.1v-50.32h192.54v50.32H2341.72z'/%3E%3Cpath class='st0' d='M2476.8,403.26c-31.32,0-60.8-11.29-81.99-37.62l34.54-39.5c11.51,17.87,30.41,29.62,48.83,29.62 c18.43,0,35.94-13.64,35.94-34.79c0-18.35-15.67-28.7-37.78-41.39l-22.11-12.7c-28.09-15.52-54.82-38.56-54.82-79.95 c0-45.14,42.39-75.24,87.53-75.24c26.71,0,52.97,8.47,72.32,29.63l-31.78,35.74c-10.6-11.76-24.88-18.81-38.69-18.81 c-19.35,0-35.47,11.28-35.47,28.68c0,16.46,13.81,24.92,36.38,37.63l22.11,12.7c30.86,17.4,56.2,43.26,56.2,82.29 C2568.01,367.99,2527.48,403.26,2476.8,403.26z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st0' d='M155.81,166.71v63.49h78.77v49.84h-78.77v118.5h-54.35V116.39h137.73v50.32H155.81z'/%3E%3Cpath class='st0' d='M249.89,398.54V116.39h54.35v231.85h94.9v50.31H249.89z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M555.09,398.54v-118.5h-88.43v118.5h-54.36V116.39h54.36V230.2h88.43V116.39h54.36v282.16H555.09z'/%3E%3Cpath class='st1' d='M720.57,357.17c20.27,0,38.24-10.81,46.99-21.63l29.93,30.1c-11.97,15.05-37.3,39.03-81.53,39.03 c-63.57,0-94.9-55.02-94.9-114.27c0-61.14,40.54-114.28,100.43-114.28c41.91,0,78.3,24.92,78.3,63.01 c0,52.67-54.36,79.48-124.83,78.07C680.96,343.52,696.63,357.17,720.57,357.17z M752.36,242.89c0-12.69-11.51-22.11-29.49-22.11 c-26.24,0-45.14,23.04-49.75,55.03C729.33,272.99,752.36,260.77,752.36,242.89z'/%3E%3Cpath class='st1' d='M958.4,405.13c-2.77-1.87-17.97-19.27-23.49-27.74c-5.07,7.05-28.55,27.28-61.74,27.28 c-44.68,0-75.07-27.75-75.07-70.54c0-46.56,38.24-71.95,94.43-71.95c10.13,0,22.58,0,22.58,0c0-24.92-10.14-39.97-31.79-39.97 c-17.5,0-33.62,7.05-40.53,11.27l-20.73-38.08c7.83-5.64,35.01-19.28,64.03-19.28c55.73,0,81.53,35.74,81.53,83.71v46.09 c0,31.04,11.06,52.68,35,71.48L958.4,405.13z M892.52,299.32c-28.09,0-40.99,15.06-40.99,32.93c0,21.63,15.2,31.5,28.55,31.5 c24.42,0,38.69-23.97,38.69-23.97c-0.91-5.65-2.75-17.41-3.22-26.81c0-3.29-0.46-11.29-0.46-13.64 C915.1,299.32,893.91,299.32,892.52,299.32z'/%3E%3Cpath class='st1' d='M1006.88,398.54V74.07h52.51v324.48H1006.88z'/%3E%3Cpath class='st1' d='M1162.71,231.61v74.76c0,31.05,11.05,52.67,35.01,71.48l-44.23,27.75c-30.4-28.21-43.29-56.89-43.29-99.23 v-74.76h-40.08v-49.38h40.08v-65.84h52.51v65.84h41.92v49.38H1162.71z'/%3E%3Cpath class='st1' d='M1337.41,398.54v-140.6c0-20.23-8.74-32.92-26.25-32.92c-30.41,0-45.61,36.68-45.61,36.68v136.84h-52.51 V74.07h52.51v133.55c3.69-6.11,26.26-33.86,61.27-33.86c29.93,0,63.11,20.7,63.11,67.25v157.53H1337.41z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 167px;
+  display: flex;
+  align-self: center;
+  width: 170px;
+  height: 50px;
+  margin-right: 0.75em;
+  margin-left: 0.75em;
+}
+.nav-drawer-container .mdc-tab-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+.nav-drawer-container .mdc-tab-bar .mdc-tab {
+  max-width: max-content;
+}
+.nav-drawer-container .mdc-tab-bar, .mdc-drawer-app-content > div {
+  /*border-bottom: 1px solid #00669933;*/
+  box-shadow: 0 1px 5px rgba(0, 102, 153, .25);
+}
 .nav-tabgroup-container span.mdc-tab__text-label {
   color: #006699;
   font-family: "Raleway", sans-serif;
@@ -52,8 +83,8 @@ FLHealthCHARTS.gov
   background-color: #fff;
   color: #006699 !important;
   letter-spacing: 0.01em !important;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
+  margin-top: 0.75em;
+  margin-left: 0.75em;
   text-transform: capitalize !important;
   transition: 0.5s all ease;
 }
@@ -78,7 +109,7 @@ FLHealthCHARTS.gov
 .nav-drawer-container .mdc-drawer-app-content:has(button .nav-btn-hide) > div {
   display: flex;
   justify-content: end;
-  width: calc(100% - 2em);
+  width: calc(100% - 0.75em);
 }
 .nav-drawer-container:has(.nav-btn-hide) button {
   background-color: #ecf1f7 !important;
@@ -138,7 +169,7 @@ FLHealthCHARTS.gov
 /* Main Nav Mobile Accordion */
 .mat-accordion:has(.nav-list) {
   border-top: 1px solid rgba(0,0,0,.2);
-  margin-top: 3.2em;
+  margin-top: 3.5em;
 }
 .mat-accordion .mat-expansion-panel:has(.nav-list) {
   background-color: transparent;
