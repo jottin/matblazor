@@ -91,7 +91,6 @@ FLHealthCHARTS.gov
   left: 0;
   min-width: 100px;
   z-index: 100;
-  border: 1px solid red;
 }
 .nav-tabgroup-container .mdc-tab--active:first-of-type {
   display: none;
