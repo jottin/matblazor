@@ -50,6 +50,7 @@ body:has(.mdc-tab--active:not(:first-of-type)) {
   text-decoration: none;
 }
 .nav-drawer-container .mdc-tab-bar {
+  background-color: #fff;
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
