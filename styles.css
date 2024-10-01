@@ -10,6 +10,9 @@ FLHealthCHARTS.gov
   --mdc-theme-secondary: #f68e1e !important;
 }
 /* Main Nav Desktop */
+body:has(.mdc-tab--active:not(:first-of-type)) {
+  overflow-y: hidden;
+}
 .nav-drawer-container {
   background-color: #fff;
   font-family: "Open Sans", arial, helvetica, sans-serif !important;
@@ -17,7 +20,7 @@ FLHealthCHARTS.gov
   top: 0;
   z-index: 100;
 }
-.nav-drawer-container .nav-tabgroup-container {
+.nav-drawer-container:has(.mdc-tab--active:not(:first-of-type)) .nav-tabgroup-container {
   min-height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
