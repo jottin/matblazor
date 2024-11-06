@@ -1,7 +1,7 @@
 /*
 Custom MatBlazor Styles for CHARTS
 https://www.matblazor.com/
-https://blazorfiddle.com/s/virflfgl
+https://blazorfiddle.com/s/ldvjw3wo
 FLHealthCHARTS.gov
 */
 /* Default Theme Overrides */
@@ -12,6 +12,26 @@ FLHealthCHARTS.gov
 /* Main Nav Desktop */
 body:has(.mdc-tab--active:not(:first-of-type)) {
   overflow-y: hidden;
+}
+.topbar {
+  background-color: #eee;
+  color: #069;
+  display: flex;
+  justify-content: end;
+  height: 40px;
+  width: 100%;
+  font-size: 0.9em;
+  padding: 1em;
+  margin: 0 auto;
+}
+.menubar {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+.mdc-tab-scroller__scroll-content {
+  flex-wrap: wrap;
 }
 .nav-drawer-container {
   background-color: #fff;
@@ -30,7 +50,7 @@ body:has(.mdc-tab--active:not(:first-of-type)) {
 .nav-drawer-container, .nav-drawer-container .nav-tabgroup-container, .nav-drawer-container .nav-tabgroup-container .mat-tab-group-content, #hero {
   width: 100%;
 }
-.nav-drawer-container, .nav-drawer-container .mdc-tab-bar, .mdc-tab-bar .mdc-tab, .mdc-drawer-app-content > div {
+.mdc-tab-bar .mdc-tab, .mdc-drawer-app-content > div {
   height: 60px;
 }
 .nav-drawer-container a.flhc {
@@ -274,7 +294,7 @@ body:has(.mdc-tab--active:not(:first-of-type)) {
   overflow: hidden;
   position: relative;
   padding: 1em 0;
-  margin: 0;
+  margin: 50px 0;
   z-index: 99;
   transition: 0.3s;
 }
