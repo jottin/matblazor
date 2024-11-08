@@ -37,11 +37,15 @@ body:has(.mdc-tab--active:not(:first-of-type)), body:has(.mdc-drawer-app-content
   flex-wrap: wrap;
   width: 100%;
 }
+.nav-drawer-container:has(.topbar-scrolled) {
+  top: -40px;
+}
 .nav-drawer-container {
   background-color: #fff;
   font-family: "Open Sans", arial, helvetica, sans-serif !important;
   position: fixed !important;
   top: 0;
+  transition: all 0.3s;
   z-index: 100;
 }
 .nav-drawer-container:has(.mdc-tab--active:not(:first-of-type)) .nav-tabgroup-container {
@@ -299,7 +303,7 @@ body:has(.mdc-tab--active:not(:first-of-type)), body:has(.mdc-drawer-app-content
   overflow: hidden;
   position: relative;
   padding: 1em 0;
-  margin: 50px 0;
+  margin: 50px 0 200px 0;
   z-index: 99;
   transition: 0.3s;
 }
