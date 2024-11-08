@@ -21,26 +21,26 @@
   }
 
   /**
-   * Header fixed top on scroll
+   * Hide topbar on scroll
    */
-  let selectHeader = select('#header')
-  let selectTopbar = select('#topbar')
-  if (selectHeader) {
-    const headerScrolled = () => {
+  let selectTopbar = select('.topbar')
+  let selectMenubar = select('.menubar')
+  if (selectMenubar) {
+    const menuScrolled = () => {
       if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
+        selectMenubar.classList.add('menu-scrolled')
         if (selectTopbar) {
           selectTopbar.classList.add('topbar-scrolled')
         }
       } else {
-        selectHeader.classList.remove('header-scrolled')
+        selectMenubar.classList.remove('menu-scrolled')
         if (selectTopbar) {
           selectTopbar.classList.remove('topbar-scrolled')
         }
       }
     }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
+    window.addEventListener('load', menuScrolled)
+    onscroll(document, menuScrolled)
   }
 
 })()
