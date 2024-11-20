@@ -1,5 +1,5 @@
 MYAPP = {
-userScroll: function() {
+userScroll: (function() {
 
   /**
    * Easy selector helper function
@@ -42,6 +42,6 @@ userScroll: function() {
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
-	
-}
+
+})()
 }
