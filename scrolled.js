@@ -1,5 +1,5 @@
-(function() {
-  "use strict";
+MYAPP = {
+userScroll: function() {
 
   /**
    * Easy selector helper function
@@ -23,24 +23,25 @@
   /**
    * Hide topbar on scroll
    */
-  let selectTopbar = select('.topbar')
-  let selectMenubar = select('.menubar')
-  if (selectMenubar) {
-    const menuScrolled = () => {
+  let selectHeader = select('#header')
+  let selectTopbar = select('#topbar')
+  if (selectHeader) {
+    const headerScrolled = () => {
       if (window.scrollY > 100) {
-        selectMenubar.classList.add('menu-scrolled')
+        selectHeader.classList.add('header-scrolled')
         if (selectTopbar) {
           selectTopbar.classList.add('topbar-scrolled')
         }
       } else {
-        selectMenubar.classList.remove('menu-scrolled')
+        selectHeader.classList.remove('header-scrolled')
         if (selectTopbar) {
           selectTopbar.classList.remove('topbar-scrolled')
         }
       }
     }
-    window.addEventListener('load', menuScrolled)
-    onscroll(document, menuScrolled)
+    window.addEventListener('load', headerScrolled)
+    onscroll(document, headerScrolled)
   }
-
-})()
+	
+}
+}
