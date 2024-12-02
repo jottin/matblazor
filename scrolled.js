@@ -1,3 +1,3 @@
 window.getScrollTop = (selector) => {
-  return document.querySelector(".divBody").scrollTop
+  return document.querySelector(".hero").scrollTop
 }
