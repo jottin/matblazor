@@ -1,7 +1,7 @@
 /*
 Custom MatBlazor Styles for CHARTS
 https://www.matblazor.com/
-https://blazorfiddle.com/s/twatwvd0
+https://blazorfiddle.com/s/oqc8kj8g
 FLHealthCHARTS.gov
 */
 /* Default Theme Overrides */
@@ -13,12 +13,12 @@ FLHealthCHARTS.gov
 body:has(.mdc-tab--active:not(:first-of-type)), body:has(.mdc-drawer-app-content .nav-btn-hide) {
   overflow-y: hidden; /* prevent double scroll bars */
 }
-.divBody {
-  overflow: auto;
-  height: 100%;
+body:has(.divBody.scrolled) .nav-drawer-container {
+  top: -40px;
 }
-.divBody.scrolled {
-  background-color: yellow;
+.divBody {
+  overflow-y: auto;
+  height: 100vh;
 }
 .topbar {
   background-color: #eee;
@@ -30,6 +30,7 @@ body:has(.mdc-tab--active:not(:first-of-type)), body:has(.mdc-drawer-app-content
   font-size: 0.9em;
   padding: 0.5em 1em;
   margin: 0 auto;
+  transition: all 0.3s ease;
 }
 .menubar {
   display: flex;
@@ -43,9 +44,6 @@ body:has(.mdc-tab--active:not(:first-of-type)), body:has(.mdc-drawer-app-content
 .mdc-tab-scroller__scroll-content {
   flex-wrap: wrap;
   width: 100%;
-}
-.nav-drawer-container:has(.topbar-scrolled) {
-  top: -40px;
 }
 .nav-drawer-container {
   background-color: #fff;
@@ -150,18 +148,18 @@ body:has(.mdc-tab--active:not(:first-of-type)), body:has(.mdc-drawer-app-content
   display: none;
 }
 .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(3)) .mdc-tab:first-of-type {
-  left: 195px;
+  left: 194px;
 }
 .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(4)) .mdc-tab:first-of-type {
-  left: 295px;
+  left: 293px;
   min-width: 160px;
 }
 .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(5)) .mdc-tab:first-of-type {
-  left: 455px;
-  min-width: 150px;
+  left: 452px;
+  min-width: 145px;
 }
 .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(6)) .mdc-tab:first-of-type {
-  left: 605px;
+  left: 597px;
   min-width: 115px;
 }
 /* Main Nav Mobile */
