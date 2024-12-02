@@ -13,6 +13,13 @@ FLHealthCHARTS.gov
 body:has(.mdc-tab--active:not(:first-of-type)), body:has(.mdc-drawer-app-content .nav-btn-hide) {
   overflow-y: hidden; /* prevent double scroll bars */
 }
+.divBody {
+  overflow: auto;
+  height: 100%;
+}
+.divBody.scrolled {
+  background-color: yellow;
+}
 .topbar {
   background-color: #eee;
   color: #069;
