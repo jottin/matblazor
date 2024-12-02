@@ -295,6 +295,12 @@ body:has(.divBody.scrolled) .nav-drawer-container {
   flex-basis: 50% !important;
   font-size: 1em !important;
 }
+/* Breakpoints - Main Nav */
+@media screen and (max-width: 599.5px) {
+  .nav-drawer-container {
+    top: 0 !important;
+  }
+}
 /* Hero */
 #hero {
   display: flex;
@@ -409,7 +415,7 @@ body:has(.divBody.scrolled) .nav-drawer-container {
 #hero .herosearch form input[type=search] {
   width: 100%;
 }
-/* Breakpoint and Down - Hero Styles */
+/* Breakpoints - Hero */
 @media (min-width: 1024px) {
   #hero p {
     width: 60%;
