@@ -440,6 +440,11 @@ body:has(.divBody.scrolled) .nav-drawer-container {
     width: 90%;
   }
 }
+@media screen and (max-width: 599.5px) {
+  #hero {
+    margin-top: 20px !important;
+  }
+}
 @media screen and (max-width: 414px) {
   #hero .herosearch div h1 {
     font-size: 1.5em;
