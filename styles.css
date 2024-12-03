@@ -20,8 +20,22 @@ body:has(.divBody.scrolled) .nav-drawer-container {
   overflow-y: auto;
   height: 100vh;
 }
+.topbar::before {
+  content: "";
+  background-color: #ecf1f7;
+  height: 40px;
+  display: block;
+  margin-left: calc(-50vw + 50%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+}
 .topbar {
-  background-color: #eee;
+  background-color: #ecf1f7;
   color: #069;
   display: flex;
   justify-content: flex-end;
@@ -44,7 +58,8 @@ body:has(.divBody.scrolled) .nav-drawer-container {
 }
 .mdc-tab-scroller__scroll-content {
   flex-wrap: wrap;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 .nav-drawer-container {
   background-color: #fff;
