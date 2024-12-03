@@ -35,8 +35,9 @@ body:has(.divBody.scrolled) .nav-drawer-container {
 .menubar {
   display: flex;
   height: 60px;
-  min-width: auto;
+  width: auto;
   position: relative;
+  justify-content: start;
 }
 .mdc-tab-scroller {
   flex: 1;
@@ -88,9 +89,6 @@ body:has(.divBody.scrolled) .nav-drawer-container {
   flex-wrap: nowrap;
   justify-content: start;
 }
-.nav-drawer-container .mdc-tab-bar .mdc-tab {
-  max-width: max-content;
-}
 .nav-drawer-container .mdc-tab-bar, .mdc-drawer-app-content > div {
   box-shadow: 0 1px 5px rgba(0, 102, 153, .25);
 }
@@ -130,10 +128,6 @@ body:has(.divBody.scrolled) .nav-drawer-container {
 .nav-tabgroup-container .nav-list h4, .nav-tabgroup-container .nav-list ul {
   margin-left: 0.75em !important;
 }
-.nav-tabgroup-container .mdc-tab-bar .mdc-tab {
-  flex: 1;
-  min-width: 100px;
-}
 /* Close Active Tab - Default Tab Over Active Tab */
 .nav-tabgroup-container .mdc-tab:first-of-type {
   display: flex;
@@ -147,20 +141,29 @@ body:has(.divBody.scrolled) .nav-drawer-container {
 .nav-tabgroup-container .mdc-tab--active:first-of-type {
   display: none;
 }
+.nav-tabgroup-container .mdc-tab-bar .mdc-tab:nth-child(3), .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(3)) .mdc-tab:first-of-type {
+  width: 100px;
+}
+.nav-tabgroup-container .mdc-tab-bar .mdc-tab:nth-child(4), .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(4)) .mdc-tab:first-of-type {
+  width: 163px;
+}
+.nav-tabgroup-container .mdc-tab-bar .mdc-tab:nth-child(5), .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(5)) .mdc-tab:first-of-type {
+  width: 148px;
+}
+.nav-tabgroup-container .mdc-tab-bar .mdc-tab:nth-child(6), .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(6)) .mdc-tab:first-of-type {
+  width: 116px;
+}
 .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(3)) .mdc-tab:first-of-type {
   left: 194px;
 }
 .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(4)) .mdc-tab:first-of-type {
-  left: 293px;
-  min-width: 160px;
+  left: 294px;
 }
 .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(5)) .mdc-tab:first-of-type {
-  left: 452px;
-  min-width: 145px;
+  left: 457px;
 }
 .nav-tabgroup-container .mdc-tab-bar:has(.mdc-tab--active:nth-child(6)) .mdc-tab:first-of-type {
-  left: 597px;
-  min-width: 115px;
+  left: 605px;
 }
 /* Main Nav Mobile */
 .nav-drawer-container >:not(.nav-tabgroup-container) a.flhc {
