@@ -80,7 +80,7 @@ body:has(.divBody.scrolled) .nav-drawer-container {
 .nav-drawer-container, .nav-drawer-container .nav-tabgroup-container, .nav-drawer-container .nav-tabgroup-container .mat-tab-group-content, #hero {
   width: 100%;
 }
-.mdc-tab-bar .mdc-tab, .mdc-drawer-app-content > div {
+.mdc-tab-bar .mdc-tab {
   height: 60px;
 }
 .nav-drawer-container a.flhc {
@@ -181,13 +181,6 @@ body:has(.divBody.scrolled) .nav-drawer-container {
   left: 605px;
 }
 /* Main Nav Mobile */
-.nav-drawer-container >:not(.nav-tabgroup-container) a.flhc {
-  position: absolute;
-  top: 0.15em;
-  right: 0;
-  bottom: 0;
-  left: 1em;
-}
 .nav-drawer-container button {
   background-color: #fff;
   color: #006699 !important;
@@ -351,8 +344,36 @@ body:has(.divBody.scrolled) .nav-drawer-container {
   }
 }
 @media screen and (max-width: 599.5px) {
-  .nav-drawer-container {
-    top: 0 !important;
+  .mdc-drawer-app-content > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-right: 0 !important;
+    width: 100%;
+    height: 100px;
+  }
+  .topbar + div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding-right: 1em;
+  }
+  .topbar {
+    display: flex;
+    height: 40px;
+  }
+  .topbar::before {
+    display: none;
+  }
+  .mdc-drawer--open ~ .mdc-drawer-app-content button {
+    margin-top: -2.15em;
+  }
+  body:has(.divBody.scrolled) .mdc-drawer--open ~ .mdc-drawer-app-content button {
+    margin-top: 0.75em;
+  }
+  body:has(.divBody.scrolled) .nav-drawer-container > aside.mat-drawer {
+    padding-top: 2.75em;
   }
 }
 /* Hero */
@@ -496,7 +517,8 @@ body:has(.divBody.scrolled) .nav-drawer-container {
 }
 @media screen and (max-width: 599.5px) {
   #hero {
-    margin-top: 20px !important;
+    margin-top: 50px !important;
+    margin-bottom: 1000px; /* for testing */
   }
 }
 @media screen and (max-width: 414px) {
