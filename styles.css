@@ -374,7 +374,7 @@ body:has(.divBody.scrolled) .nav-drawer-container {
     margin-top: 0.75em;
   }
   body:has(.divBody.scrolled) .nav-drawer-container > aside.mat-drawer {
-    padding-top: 2.75em;
+    margin-top: 40px;
   }
 }
 /* Hero */
